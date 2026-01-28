@@ -4,12 +4,12 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <stddef.h>
-/*
+
 typedef	struct	s_list
 {
-	content
-	next
-}	t_list */
+	void			*content;
+	struct s_list	*next;
+}					t_list;
 void	ft_putchar(char c); // calling of function (#inc "libft.h" inside func.)
 int		ft_strlen(int c); // different functions inside the library file
 
