@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oduztas <oduztas@student.42istanbul.com    +#+  +:+       +#+        */
+/*   By: ceydac <ceydac@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 11:42:07 by oduztas           #+#    #+#             */
-/*   Updated: 2026/01/09 15:14:39 by oduztas          ###   ########.fr       */
+/*   Updated: 2026/01/29 12:05:35 by ceydac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-	char *temp_po;
+	char	*temp_po;
 
 	temp_po = (char *) s;
 	while (n > 0)

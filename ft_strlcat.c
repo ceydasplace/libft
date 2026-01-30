@@ -3,41 +3,28 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oduztas <oduztas@student.42istanbul.com    +#+  +:+       +#+        */
+/*   By: ceydac <ceydac@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/05 17:36:18 by oduztas           #+#    #+#             */
-/*   Updated: 2026/01/06 10:50:54 by oduztas          ###   ########.fr       */
+/*   Updated: 2026/01/29 20:19:11 by ceydac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "libft.h"
-
-#include <stddef.h>
-#include <stdio.h>
+#include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	int	src_len;
-	int	dst_len;
-	int	i;
-
+	size_t i;
+	int destlen;
+	int	srclen;
+	
+	destlen = ft_strlen(dst);
+	srclen = ft_strlen(src);
 	i = 0;
-	dst_len = 8;
-	src_len = 5;
-	while (dst[i] && i < size)
+	while (src[i] && size - 1 > i)
 	{
-		dst[dst_len] = src[i];
-		i++;
-		dst_len++;
+		dst[destlen++] = src[i++];
 	}
-	dst[dst_len] = '\0';
-}
-
-int	main(void)
-{
-	char	src[] = "selam";
-	char	dst[] = "merhaba ";
-	size_t size = 12;
-	printf("%zu", ft_strlcat(src,dst,size));
-	printf("\n%s", dst);
+	dst[destlen] = '\0';
+	return (destlen + srclen);
 }

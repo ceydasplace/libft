@@ -3,11 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oduztas <oduztas@student.42istanbul.com    +#+  +:+       +#+        */
+/*   By: ceydac <ceydac@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 09:13:50 by oduztas           #+#    #+#             */
-/*   Updated: 2026/01/07 09:13:53 by oduztas          ###   ########.fr       */
+/*   Updated: 2026/01/29 19:22:43 by ceydac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void	ft_lstadd_front(t_list **lst, t_list *new)
+{
+	
+}

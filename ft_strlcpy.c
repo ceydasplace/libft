@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oduztas <oduztas@student.42istanbul.com    +#+  +:+       +#+        */
+/*   By: ceydac <ceydac@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 09:15:37 by oduztas           #+#    #+#             */
-/*   Updated: 2026/01/09 16:39:25 by oduztas          ###   ########.fr       */
+/*   Updated: 2026/01/29 20:19:39 by ceydac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 size_t    ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	src_len;
-	int		i;
+	size_t		i;
 
 	i = 0;
 	src_len = ft_strlen(src);

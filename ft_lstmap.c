@@ -3,11 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oduztas <oduztas@student.42istanbul.com    +#+  +:+       +#+        */
+/*   By: ceydac <ceydac@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 09:14:19 by oduztas           #+#    #+#             */
-/*   Updated: 2026/01/07 09:14:22 by oduztas          ###   ########.fr       */
+/*   Updated: 2026/01/29 17:17:57 by ceydac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void ft_lstdelone(t_list *lst, void (*del)(void *))
+{
+    del(lst->content);
+    free(lst);
+}
