@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ceydac <ceydac@student.42.fr>              +#+  +:+       +#+        */
+/*   By: oduztas <oduztas@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 09:14:36 by oduztas           #+#    #+#             */
-/*   Updated: 2026/01/29 12:31:06 by ceydac           ###   ########.fr       */
+/*   Updated: 2026/01/30 08:45:11 by oduztas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,3 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (i);
 }
-/*returns the number of elements on the list*/

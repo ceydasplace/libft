@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ceydac <ceydac@student.42.fr>              +#+  +:+       +#+        */
+/*   By: oduztas <oduztas@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 09:13:50 by oduztas           #+#    #+#             */
-/*   Updated: 2026/01/29 19:22:43 by ceydac           ###   ########.fr       */
+/*   Updated: 2026/01/30 08:30:10 by oduztas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,8 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	
+	if (!new || !lst)
+		return ;
+	new->next = *lst;
+	*lst = new;
 }
