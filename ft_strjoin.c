@@ -6,7 +6,7 @@
 /*   By: oduztas <oduztas@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 09:15:31 by oduztas           #+#    #+#             */
-/*   Updated: 2026/01/30 13:16:40 by oduztas          ###   ########.fr       */
+/*   Updated: 2026/01/30 16:58:53 by oduztas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	i = 0;
 	slen = 0;
-	if (s1[i] == '\0' || s2[i] == '\0')
-		return (0);
+	if (!s1 || !s2)
+		return (NULL);
 	s1len = ft_strlen(s1);
 	s2len = ft_strlen(s2);
 	sum = malloc(sizeof(char) * (s1len + s2len + 1));

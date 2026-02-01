@@ -6,7 +6,7 @@
 /*   By: oduztas <oduztas@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 09:15:20 by oduztas           #+#    #+#             */
-/*   Updated: 2026/01/30 09:21:14 by oduztas          ###   ########.fr       */
+/*   Updated: 2026/01/30 15:59:07 by oduztas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strchr(const char *s, int c)
 	while (s[i])
 	{
 		if (s[i] == (char)c)
-			return((char *)s + i);
+			return ((char *)s + i);
 		i++;
 	}
 	if ((char)c == '\0')

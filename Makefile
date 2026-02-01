@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ceydac <ceydac@student.42.fr>              +#+  +:+       +#+         #
+#    By: oduztas <oduztas@student.42istanbul.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/28 07:33:23 by oduztas           #+#    #+#              #
-#    Updated: 2026/01/29 20:13:51 by ceydac           ###   ########.fr        #
+#    Updated: 2026/01/31 14:18:18 by oduztas          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,13 +23,16 @@ SRCS = ft_atoi.c \
         ft_isascii.c \
         ft_isdigit.c \
         ft_isprint.c \
+		ft_itoa.c \
         ft_memchr.c \
         ft_memcmp.c \
         ft_memcpy.c \
         ft_memset.c \
+		ft_memmove.c \
         ft_putchar_fd.c \
         ft_putnbr_fd.c \
         ft_putstr_fd.c \
+		ft_putendl_fd.c \
         ft_split.c \
         ft_strchr.c \
         ft_strdup.c \
@@ -54,9 +57,12 @@ SRCS = ft_atoi.c \
 		ft_lstdelone.c \
 		ft_lstclear.c \
 		ft_lstiter.c \
-		ft_lstmap.c 
+		ft_lstmap.c
 
+SRCS_BONUS = 
 OBJS = $(SRCS:.c=.o)
+
+OBJS_BONUS = $(SRCS_BONUS:.c=.o)
 
 all: $(NAME)
 
@@ -65,13 +71,16 @@ $(NAME): $(OBJS)
 
 %.o: %.c
 	$(CC) -c $(CFLAGS) $?
+	
+bonus : $(OBJS) $(OBJS_BONUS)
+	ar -rc $(NAME) $(OBJS) $(OBJS_BONUS)
 
 clean:
-	rm -f $(OBJS)
+	rm -f $(OBJS) $(OBJS_BONUS)
 
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re bonus
