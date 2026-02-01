@@ -6,11 +6,9 @@
 /*   By: oduztas <oduztas@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 11:42:04 by oduztas           #+#    #+#             */
-/*   Updated: 2026/01/30 08:15:04 by oduztas          ###   ########.fr       */
+/*   Updated: 2026/02/01 14:12:47 by oduztas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_atoi(const char *str)
 {

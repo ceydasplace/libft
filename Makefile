@@ -6,7 +6,7 @@
 #    By: oduztas <oduztas@student.42istanbul.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/28 07:33:23 by oduztas           #+#    #+#              #
-#    Updated: 2026/01/31 14:18:18 by oduztas          ###   ########.fr        #
+#    Updated: 2026/02/01 14:31:30 by oduztas          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -59,10 +59,8 @@ SRCS = ft_atoi.c \
 		ft_lstiter.c \
 		ft_lstmap.c
 
-SRCS_BONUS = 
-OBJS = $(SRCS:.c=.o)
 
-OBJS_BONUS = $(SRCS_BONUS:.c=.o)
+OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
 
@@ -71,12 +69,9 @@ $(NAME): $(OBJS)
 
 %.o: %.c
 	$(CC) -c $(CFLAGS) $?
-	
-bonus : $(OBJS) $(OBJS_BONUS)
-	ar -rc $(NAME) $(OBJS) $(OBJS_BONUS)
 
 clean:
-	rm -f $(OBJS) $(OBJS_BONUS)
+	rm -f $(OBJS)
 
 fclean: clean
 	rm -f $(NAME)
