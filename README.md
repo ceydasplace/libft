@@ -1,6 +1,5 @@
 *This project has been created as part of the 42 curriculum by oduztas.*
 
-```markdown
 # LIBFT
 
 ## Description
@@ -69,11 +68,10 @@ typedef struct s_list
     void            *content;
     struct s_list   *next;
 }                   t_list;
-
 ```
 
 | Function | Description |
-| --- | --- |
+|----------|-------------|
 | `ft_lstnew` | Creates a new list node |
 | `ft_lstadd_front` | Adds a node at the beginning of the list |
 | `ft_lstsize` | Counts the number of nodes in the list |
@@ -88,9 +86,9 @@ typedef struct s_list
 
 ### Requirements
 
-* GCC compiler
-* Make
-* Unix-based operating system (Linux/macOS)
+- GCC compiler
+- Make
+- Unix-based operating system (Linux/macOS)
 
 ### Compilation
 
@@ -100,7 +98,6 @@ Clone the repository and compile the library:
 git clone [https://github.com/EsatSimsek/libft](https://github.com/EsatSimsek/libft) libft
 cd libft
 make
-
 ```
 
 This will generate the `libft.a` static library file.
@@ -108,7 +105,7 @@ This will generate the `libft.a` static library file.
 ### Available Make Commands
 
 | Command | Description |
-| --- | --- |
+|---------|-------------|
 | `make` or `make all` | Compiles the library |
 | `make clean` | Removes object files |
 | `make fclean` | Removes object files and the library |
@@ -119,32 +116,27 @@ This will generate the `libft.a` static library file.
 To use libft in your project:
 
 1. Include the header file in your source code:
-```c
-#include "libft.h"
-
-```
-
+   ```c
+   #include "libft.h"
+   ```
 
 2. Compile your program with the library:
-```bash
-cc -Wall -Wextra -Werror your_program.c -L. -lft -o your_program
-
-```
-
-
+   ```bash
+   cc -Wall -Wextra -Werror your_program.c -L. -lft -o your_program
+   ```
 
 ## Resources
 
 ### Documentation & References
 
-* [The C Programming Language (K&R)](https://en.wikipedia.org/wiki/The_C_Programming_Language) - Classic C reference book
-* [GNU C Library Manual](https://www.gnu.org/software/libc/manual/) - Official libc documentation
-* [man7.org](https://man7.org/linux/man-pages/) - Linux manual pages
-* [cppreference.com - C Reference](https://en.cppreference.com/w/c) - Detailed C function documentation
+- [The C Programming Language (K&R)](https://en.wikipedia.org/wiki/The_C_Programming_Language) - Classic C reference book
+- [GNU C Library Manual](https://www.gnu.org/software/libc/manual/) - Official libc documentation
+- [man7.org](https://man7.org/linux/man-pages/) - Linux manual pages
+- [cppreference.com - C Reference](https://en.cppreference.com/w/c) - Detailed C function documentation
 
 ### 42 Specific
 
-* [42 Cursus Subject](https://projects.intra.42.fr) - Official project documentation
+- [42 Cursus Subject](https://projects.intra.42.fr) - Official project documentation
 
 ### AI Usage
 
@@ -158,7 +150,3 @@ As mandated by the subject guidelines, AI tools were utilized during the develop
 ---
 
 **Author:** oduztas@student.42istanbul.com.tr
-
-```
-
-```
