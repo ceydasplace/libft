@@ -1,18 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   main_strjoin.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oduztas <oduztas@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/06 11:34:50 by oduztas           #+#    #+#             */
-/*   Updated: 2026/02/01 21:27:02 by oduztas          ###   ########.fr       */
+/*   Created: 2026/02/02 19:46:58 by oduztas           #+#    #+#             */
+/*   Updated: 2026/02/02 19:54:04 by oduztas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(int c)
+#include "libft.h"
+#include <stdio.h>
+
+int main(void)
 {
-	if (c >= 32 && c <= 126)
-		return (c);
-	return (0);
+	char	s1[] = "batuhan";
+	char	s2[] = "ceyda";
+	printf("%s", ft_strjoin(s1,s2));
 }

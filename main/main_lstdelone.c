@@ -1,18 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   main_lstdelone.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oduztas <oduztas@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/06 11:34:50 by oduztas           #+#    #+#             */
-/*   Updated: 2026/02/01 21:27:02 by oduztas          ###   ########.fr       */
+/*   Created: 2026/02/02 20:34:08 by oduztas           #+#    #+#             */
+/*   Updated: 2026/02/02 20:38:01 by oduztas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(int c)
+#include "libft.h"
+#include <stdio.h>
+
+int main(void)
 {
-	if (c >= 32 && c <= 126)
-		return (c);
-	return (0);
+	t_list	*node;
+	t_list	*node2;
+	t_list	*node3;
+
+	node->next = node2;
+	node2->next = node3;
+	ft_lstdelone(node2, ft_bzero);
+	
+	
 }

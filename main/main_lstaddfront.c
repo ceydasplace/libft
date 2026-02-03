@@ -1,18 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   main_lstaddfront.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oduztas <oduztas@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/06 11:34:50 by oduztas           #+#    #+#             */
-/*   Updated: 2026/02/01 21:27:02 by oduztas          ###   ########.fr       */
+/*   Created: 2026/02/02 20:22:44 by oduztas           #+#    #+#             */
+/*   Updated: 2026/02/02 20:32:48 by oduztas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(int c)
+#include <stdio.h>
+#include "libft.h"
+
+int	main(void)
 {
-	if (c >= 32 && c <= 126)
-		return (c);
+	t_list	*list = ft_lstnew("ikinci");
+	t_list	*new = ft_lstnew("birinci");
+
+	ft_lstadd_front(&list, new);
+
+	printf("Bas: %s\n", (char *)list->content);
+	printf("Sonraki: %s\n", (char *)new->next->content);
 	return (0);
 }

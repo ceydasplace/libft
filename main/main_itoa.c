@@ -1,18 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   main_itoa.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oduztas <oduztas@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/06 11:34:50 by oduztas           #+#    #+#             */
-/*   Updated: 2026/02/01 21:27:02 by oduztas          ###   ########.fr       */
+/*   Created: 2026/02/02 14:41:55 by oduztas           #+#    #+#             */
+/*   Updated: 2026/02/02 15:35:11 by oduztas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(int c)
+#include "libft.h"
+#include <stdio.h>
+
+int main(void)
 {
-	if (c >= 32 && c <= 126)
-		return (c);
-	return (0);
+	int n = 0;
+	printf("%s", ft_itoa(n));
 }

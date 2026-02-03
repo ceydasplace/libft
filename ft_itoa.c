@@ -6,25 +6,25 @@
 /*   By: oduztas <oduztas@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 11:42:21 by oduztas           #+#    #+#             */
-/*   Updated: 2026/01/30 08:18:48 by oduztas          ###   ########.fr       */
+/*   Updated: 2026/02/02 14:58:51 by oduztas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	get_str_len(long x)
+static int	get_str_len(int x)
 {
-	int	size;
+	int	len;
 
-	size = 1;
-	if (x < 0)
-		size++;
-	while (x > 9 || x < -9)
+	len = 0;
+	if (x <= 0)
+		len = 1;
+	while (x != 0)
 	{
 		x = x / 10;
-		size++;
+		len++;
 	}
-	return (size);
+	return (len);
 }
 
 char	*ft_itoa(int n)

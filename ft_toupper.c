@@ -6,15 +6,15 @@
 /*   By: oduztas <oduztas@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 09:16:29 by oduztas           #+#    #+#             */
-/*   Updated: 2026/01/30 16:04:09 by oduztas          ###   ########.fr       */
+/*   Updated: 2026/02/02 13:01:18 by oduztas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_tolower(int c)
+int	ft_toupper(int c)
 {
-	if (c >= 65 && c <= 90)
-		c = c + 32;
+	if (c >= 'a' && c <= 'z')
+		c = c - 32;
 	return (c);
 }

@@ -1,18 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   main_bzero.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oduztas <oduztas@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/06 11:34:50 by oduztas           #+#    #+#             */
-/*   Updated: 2026/02/01 21:27:02 by oduztas          ###   ########.fr       */
+/*   Created: 2026/02/02 13:52:33 by oduztas           #+#    #+#             */
+/*   Updated: 2026/02/02 14:17:59 by oduztas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(int c)
+#include "libft.h"
+#include <stdio.h>
+
+int	main(void)
 {
-	if (c >= 32 && c <= 126)
-		return (c);
-	return (0);
+	char s[50] = "ceyda selamlar";
+	size_t n = 5;
+	printf("%s\n", s);
+	ft_bzero(s, n);
+	printf("\n%s", &s[6]);
 }

@@ -4,20 +4,20 @@
 
 ## Description
 
-**libft** is a custom C library that re-implements essential functions from the standard C library (`libc`), along with additional utility functions commonly used in C programming. The goal of this project is to gain a deep understanding of how fundamental C functions work under the hood by coding them from scratch.
+**libft** is the first project at 42, where the goal is to re-create a selection of standard C library functions from scratch, along with additional utility functions that will be used throughout the curriculum.
 
-This library serves as the foundation for future 42 projects, providing a reliable and tested set of tools for string manipulation, memory management, linked list operations, and more.
+Since C is a low-level language, we often don't have access to "out-of-the-box" tools for string manipulation, memory management, or data structures. This project challenges us to understand the inner workings of these tools by building them from the ground up, following strict performance and memory guidelines.
 
 ## Library Overview
 
 ### Part 1 - Libc Functions
 
-These functions replicate the behavior of their standard library counterparts:
+These functions replicate the behavior of their standard library (libc):
 
 | Function | Description |
 |----------|-------------|
 | `ft_isalpha` | Checks if a character is alphabetic |
-| `ft_isdigit` | Checks if a character is a digit (0-9) |
+| `ft_isdigit` | Checks if a character is a digit |
 | `ft_isalnum` | Checks if a character is alphanumeric |
 | `ft_isascii` | Checks if a character is an ASCII character |
 | `ft_isprint` | Checks if a character is printable |
@@ -90,19 +90,7 @@ typedef struct s_list
 - Make
 - Unix-based operating system (Linux/macOS)
 
-### Compilation
-
-Clone the repository and compile the library:
-
-```bash
-git clone https://github.com/ceydasplace/libft libft
-cd libft
-make
-```
-
-This will generate the `libft.a` static library file.
-
-### Available Make Commands
+### Compilation and Make Commands
 
 | Command | Description |
 |---------|-------------|
@@ -113,7 +101,7 @@ This will generate the `libft.a` static library file.
 
 ### Usage
 
-To use libft in your project:
+To use this libft library in your project:
 
 1. Include the header file in your source code:
    ```c
@@ -122,30 +110,30 @@ To use libft in your project:
 
 2. Compile your program with the library:
    ```bash
-   cc -Wall -Wextra -Werror your_program.c -L. -lft -o your_program
+   cc -Wall -Wextra -Werror your_program.c libft.a -o program
    ```
 
 ## Resources
 
 ### Documentation & References
-
+- 42 Cursus Libft Subject - for official project documentation details
 - [The C Programming Language (K&R)](https://en.wikipedia.org/wiki/The_C_Programming_Language) - Classic C reference book
+- [bilgigunlugum.net - C Programming](https://bilgigunlugum.net/prog/cprog/c_proggiris) - Details and function prototypes
 - [GNU C Library Manual](https://www.gnu.org/software/libc/manual/) - Official libc documentation
 - [man7.org](https://man7.org/linux/man-pages/) - Linux manual pages
 - [cppreference.com - C Reference](https://en.cppreference.com/w/c) - Detailed C function documentation
 
-### 42 Specific
-
-- [42 Cursus Subject](https://projects.intra.42.fr) - Official project documentation
 
 ### AI Usage
 
-As mandated by the subject guidelines, AI tools were utilized during the development of this project strictly for educational and debugging purposes. Specifically, AI was used to:
+While developing this project, I used AI tools as a supplemental learning resource. My goal was to treat AI like a mentor—using it to clarify the logic behind complex behaviors (such as memory overlap in memmove) or to double-check my understanding of pointer arithmetic and linked lists.
 
-* Understand the complex behaviors and edge cases of standard library functions (e.g., `memmove` overlap handling, `strnstr` logic).
-* Clarify concepts related to memory management (`malloc`, `free`) and linked list data structures.
+Specifically, AI was used to:
+* Understand the complex behaviors and edge cases of standard library functions.
+* Clarify concepts related to memory management and linked list data structures.
 
-**Note:** All actual code implementation, logic construction, and final testing were performed manually to ensure a complete understanding of the core concepts, in compliance with 42's academic integrity policies.
+
+No code was copy-pasted. Every line of logic was written, debugged, and tested by me to ensure I fully grasp the underlying C concepts required by the 42 curriculum.
 
 ---
 

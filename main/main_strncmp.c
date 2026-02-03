@@ -1,18 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   main_strncmp.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oduztas <oduztas@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/06 11:34:50 by oduztas           #+#    #+#             */
-/*   Updated: 2026/02/01 21:27:02 by oduztas          ###   ########.fr       */
+/*   Created: 2026/02/02 17:57:24 by oduztas           #+#    #+#             */
+/*   Updated: 2026/02/02 18:00:41 by oduztas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(int c)
+#include "libft.h"
+#include <stdio.h>
+
+int main(void)
 {
-	if (c >= 32 && c <= 126)
-		return (c);
-	return (0);
+	char	s1[] = "ceydosko";
+	char	s2[] = "ceydosum";
+	size_t	n = 7;
+	printf("%d", ft_strncmp(s1, s2, n));
 }

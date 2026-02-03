@@ -1,18 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   main_memchr.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oduztas <oduztas@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/06 11:34:50 by oduztas           #+#    #+#             */
-/*   Updated: 2026/02/01 21:27:02 by oduztas          ###   ########.fr       */
+/*   Created: 2026/02/02 15:36:12 by oduztas           #+#    #+#             */
+/*   Updated: 2026/02/02 15:41:23 by oduztas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(int c)
+#include "libft.h"
+#include <stdio.h>
+int	main(void)
 {
-	if (c >= 32 && c <= 126)
-		return (c);
-	return (0);
+	char	s[] = "ceydoskus merhaba";
+	int		c = 'm';
+	size_t	n = 11;
+	char 	*str;
+	str = ft_memchr(s, c, n);
+	printf("%s",str);
 }

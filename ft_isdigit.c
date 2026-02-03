@@ -6,11 +6,9 @@
 /*   By: oduztas <oduztas@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 11:33:58 by oduztas           #+#    #+#             */
-/*   Updated: 2026/01/30 08:16:43 by oduztas          ###   ########.fr       */
+/*   Updated: 2026/02/01 21:26:57 by oduztas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isdigit(int c)
 {

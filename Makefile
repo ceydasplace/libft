@@ -6,11 +6,11 @@
 #    By: oduztas <oduztas@student.42istanbul.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/28 07:33:23 by oduztas           #+#    #+#              #
-#    Updated: 2026/02/01 14:31:30 by oduztas          ###   ########.fr        #
+#    Updated: 2026/02/02 13:04:20 by oduztas          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME =libft.a
+NAME = libft.a
 
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
@@ -78,4 +78,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re bonus
+.PHONY: all clean fclean re

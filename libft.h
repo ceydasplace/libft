@@ -6,12 +6,12 @@
 /*   By: oduztas <oduztas@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/29 19:39:28 by ceydac            #+#    #+#             */
-/*   Updated: 2026/01/31 12:42:50 by oduztas          ###   ########.fr       */
+/*   Updated: 2026/02/02 12:38:59 by oduztas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H // if not defined (security check)
-# define LIBFT_H // then define, therefore the use of " "
+#ifndef LIBFT_H
+# define LIBFT_H
 
 # include <unistd.h>
 # include <stdlib.h>
@@ -68,4 +68,4 @@ char				**ft_split(char const *s, char c);
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void				ft_striteri(char *s, void (*f)(unsigned int, char *));
 
-#endif // end definition, an open definition must be closed
+#endif
